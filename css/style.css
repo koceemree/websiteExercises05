@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+    color: #6a6a6a;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    color: #323232;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #323232;
+    transition: all .4s ease;
+}
+a:hover {
+    transform: scale(1.1);
+    color: #dc3545;
+}
+section {
+    padding: 120px 0;
+}
+#header {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/bg-cover-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.btn-danger {
+    transition: all .4s ease;
+}
+.btn-danger:hover {
+    transform: scale(1.1);
+}
+.btn {
+    font-weight: 500;
+    padding: 14px 32px;
+    transition: all .2s ease;
+}
+#about {
+    position: relative;
+}
+#about::before {
+    content: "";
+    width: 30%;
+    height: 100%;
+    background-color:#dc3545;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content-services {
+    max-width: 600px;
+}
+
+.icon {
+    width: 124px;
+    height: 124px;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.project img {
+    transition: all 0.4s ease;
+}
+.project a {
+    width: 120px;
+    height: 120px;
+    display: grid;
+    font-size: 12px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 100px;
+    transform: translate(-50%, -50%);
+    transition: all 0.8s ease;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.project:hover img {
+    transform: scale(1.2);
+}
+.project:hover a {
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
+}
+
+.link::before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #dc3545;
+    vertical-align: middle;
+    transition: all .4s ease;
+}
+.link:hover::before {
+    width: 20px;
+}
+
+#contact form {
+    border: 1px solid;
+    border-radius: 28px;
+    padding: 30px;
+}
+#contact form input:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+
+}
+#contact form {
+   justify-content: end;
+}
+#contact form  textarea {
+    border: 1px solid #ced4da;
+}
+#contact form a {
+    width: unset;
+    text-align: center;
+    margin-right: 20px;
+}
+.footer-top {
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+footer a {
+    color: rgba(255, 255, 255, 0.6);
+}
+footer ul li {
+    list-style: none;
+}
+.footer-bottom {
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
